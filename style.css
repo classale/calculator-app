@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A4663;
+    color: white;
+}
+
+main {
+    width: 90vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main > * {
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #242D44;
+    height: 75%;
+    padding: 10px;
+}
+
+.buttons button {
+    margin: 10px 7px 10px 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 -4px #B3A497;
+    background-color: #EAE3DC;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #434A59;
+}
+
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.buttons button:active {
+    background-color: #FFFFFE;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}
+
+.blue:active {
+    background-color: #A2B2E1 !important;
+}
+
+.red:active {
+    background-color: #F96B5B !important;
+}
+
+.actionbar {
+    display: flex;
+    align-items: end;
+}
+
+.actionbar b {
+    margin-right: auto;
+}
+
+.result {
+    width: 100%;
+    height: 15%;
+    background-color: #181F33;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.blue {
+    background-color: #647198 !important;
+    box-shadow: inset 0px -4px #414E73 !important;
+    color: white !important;
+}
+
+.red {
+    background-color: #D03F2F !important;
+    box-shadow: inset 0px -4px #93261A !important;
+    color: white !important;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.range {
+    margin-left: 50px;;
+    width: 10%;
+}
+
+.range > input {
+    width: 100%;
+}
+
+b {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        width: 50vw;
+    }
+}
